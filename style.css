@@ -92,7 +92,7 @@ header {
   gap: 1rem;
   display: grid;
   padding: 1.3rem 2rem;
-  grid-area: 1 / 2 / 2 / 5;
+  grid-area: 1 / 2 / 2 / 3;
   background-color: white;
   grid-template: 1rem 1fr / 2fr 1.1fr;
 }
@@ -115,6 +115,14 @@ header ul {
   justify-content: end;
 }
 
+button {
+  border: none;
+  color: white;
+  border-radius: 1rem;
+  padding: 0.2rem 2rem;
+  background-color: mediumseagreen;
+}
+
 main {
   grid-area: 2 / 2 / 3 / 5;
   background-color: #e2e8f0;
@@ -127,15 +135,18 @@ main {
 }
 
 .search input {
+  flex: 1;
   border: none;
   padding-left: 1rem;
   border-radius: 1rem;
   background-color: #e2e8f0;
-  flex: 1;
 }
 
 .notfication {
+  gap: 1.5rem;
   display: flex;
+  font-weight: bold;
+  font-size: 1.3rem;
   align-items: center;
 }
 
@@ -145,7 +156,7 @@ main {
 }
 
 .welcome {
-  gap: 2rem;
+  gap: 1.5rem;
   display: flex;
   align-items: center;
 }
@@ -157,5 +168,4 @@ main {
 .post {
   display: flex;
   align-items: end;
-  justify-content: center;
 }
