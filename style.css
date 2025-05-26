@@ -59,8 +59,7 @@ h1 svg {
 }
 
 svg {
-  width: 10%;
-  fill: white;
+  width: 1.3rem;
 }
 
 ul {
@@ -73,6 +72,10 @@ nav div {
   display: flex;
   padding: 0.6rem 1.5em;
   flex-direction: column;
+}
+
+nav svg {
+  fill: white;
 }
 
 nav li a{
@@ -90,9 +93,24 @@ header {
   background-color: white;
   display: grid;
   grid-template: 1fr 1fr / 1fr 1fr;
+  padding: 1rem;
 }
 
 main {
   grid-area: 2 / 2 / 3 / 5;
   background-color: #e2e8f0;
+}
+
+.search {
+  display: flex;
+  gap: 1rem;
+  align-items: start;
+}
+
+.search input {
+  border: none;
+  padding-left: 1rem;
+  border-radius: 1rem;
+  background-color: #e2e8f0;
+  flex: 1;
 }
