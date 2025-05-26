@@ -51,6 +51,9 @@ ul {
 } 
 
 nav li {
+  gap: 10px;
+  display: flex;
+  align-items: center;
   margin-bottom: 12px;
 }
 
