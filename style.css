@@ -36,8 +36,10 @@ h6 {
 }
 
 body {
+  height: 100vh;
   display: grid;
-  grid-template: 1fr / clamp(220px, 15%, 300px) repeat(1, 1fr);
+  grid-template-rows: 1fr 5fr;
+  grid-template-columns:  clamp(220px, 15%, 300px) 1fr;
 }
 
 nav {
@@ -89,12 +91,14 @@ nav li a{
 }
 
 header {
+  z-index: 1;
   gap: 1.3rem;
   display: grid;
-  padding: 1.1rem 1.9rem 1rem;
   grid-area: 1 / 2 / 2 / 3;
   background-color: white;
+  padding: 1rem 2rem 0.5rem;
   grid-template: 2rem 1fr / 2fr 1fr;
+  box-shadow: 2px 1px 5px darkgray;
 }
 
 small {
@@ -123,14 +127,14 @@ main {
   display: grid;
   padding: 1rem;
   font-size: 12px;
-  grid-area: 2 / 2 / 3 / 5;
+  grid-area: 2 / 2 / 3 / 3;
   background-color: #e2e8f0;
   grid-template-columns: 3fr 1fr;
 }
 
 .search {
-  display: flex;
   gap: 1rem;
+  display: flex;
   align-items: center;
 }
 
@@ -167,9 +171,9 @@ main {
 }
 
 .post {
+  gap: 1rem;
   display: grid;
   align-items: center;
-  gap: 1rem;
   grid-template-columns: repeat(3, minmax(75px, 100px));
 }
 
