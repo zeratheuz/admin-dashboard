@@ -38,15 +38,14 @@ h6 {
 body {
   height: 100vh;
   display: grid;
-  grid-template-rows: 1fr 5fr;
-  grid-template-columns:  clamp(220px, 15%, 300px) 1fr;
+  grid-template: 1fr 5fr / clamp(220px, 15%, 300px) 1fr;
 }
 
 nav {
   color: white;
   grid-area: 1 / 1 / 3 / 2;
   background-color: mediumseagreen;
-  
+
 }
 
 h1 {
@@ -80,7 +79,7 @@ nav svg {
   fill: white;
 }
 
-nav li a{
+nav li a {
   gap: 1rem;
   display: flex;
   color: white;
@@ -124,12 +123,18 @@ button {
 }
 
 main {
+  gap: 1rem;
   display: grid;
   padding: 1rem;
   font-size: 12px;
   grid-area: 2 / 2 / 3 / 3;
   background-color: #e2e8f0;
-  grid-template-columns: 3fr 1fr;
+  grid-template-columns: 3fr 1.1fr;
+}
+
+h3 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .search {
@@ -177,6 +182,17 @@ main {
   grid-template-columns: repeat(3, minmax(75px, 100px));
 }
 
-.announcements {
+.cards {
+  gap: 1rem;
+  display: grid;
+  grid-template: repeat(auto-fit, minmax(150px, 1fr)) / repeat(auto-fit, minmax(200px, 1fr)) ;
+}
+
+.cards div {
+  background-color: white;
+}
+
+.announcements h5,
+.announcements p {
   font-size: 10px;
 }
