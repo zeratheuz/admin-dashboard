@@ -120,8 +120,12 @@ button {
 }
 
 main {
+  display: grid;
+  padding: 1rem;
+  font-size: 12px;
   grid-area: 2 / 2 / 3 / 5;
   background-color: #e2e8f0;
+  grid-template-columns: 3fr 1fr;
 }
 
 .search {
@@ -167,4 +171,8 @@ main {
   align-items: center;
   gap: 1rem;
   grid-template-columns: repeat(3, minmax(75px, 100px));
+}
+
+.announcements {
+  font-size: 10px;
 }
