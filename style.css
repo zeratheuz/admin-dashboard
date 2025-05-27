@@ -91,10 +91,10 @@ nav li a{
 header {
   gap: 1.3rem;
   display: grid;
-  padding: 1.1rem 1.9rem;
+  padding: 1.1rem 1.9rem 1rem;
   grid-area: 1 / 2 / 2 / 3;
   background-color: white;
-  grid-template: 1rem 1fr / 2fr 1fr;
+  grid-template: 2rem 1fr / 2fr 1fr;
 }
 
 small {
@@ -110,16 +110,18 @@ img {
 }
 
 header ul {
-  gap: 2rem;
+  gap: 1rem;
   display: flex;
-  justify-content: end;
 }
 
 button {
+  width: 75px;
+  height: 2rem;
   border: none;
   color: white;
+  font-size: 0.8rem;
+  font-weight: bold;
   border-radius: 1rem;
-  width: 5rem;
   background-color: mediumseagreen;
 }
 
@@ -148,7 +150,7 @@ main {
   font-weight: bold;
   font-size: 1.3rem;
   align-items: center;
-  padding-right: 10px;
+  justify-content: center;
 }
 
 .notfication img {
@@ -167,6 +169,6 @@ main {
 
 .post {
   display: grid;
+  align-items: center;
   grid-template-columns: repeat(3, 1fr);
-  align-items: end;
 }
