@@ -88,13 +88,17 @@ header {
   box-shadow: 2px 1px 5px darkgray;
 }
 
-header button {
+header a {
   height: 2rem;
   border: none;
   color: white;
+  display: flex;
   font-size: 0.8rem;
   font-weight: bold;
+  align-items: center;
   border-radius: 1rem;
+  text-decoration: none;
+  justify-content: center;
   background-color: mediumseagreen;
 }
 
@@ -160,6 +164,7 @@ h4 {
 .notfication img,
 .users img {
   width: 2.2rem;
+  height: 2.2rem;
 }
 
 .welcome {
@@ -176,17 +181,18 @@ h4 {
   gap: 1rem;
   display: grid;
   align-items: center;
-  grid-template-columns: repeat(3, minmax(75px, 100px));
+  justify-content: end;
+  grid-template-columns: repeat(3, minmax(5rem, 10rem));
 }
 
 .cards {
   gap: 1rem;
   display: grid;
   grid-auto-rows: minmax(10rem, 1fr);
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)) ;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
-.cards > div {
+.cards>div {
   padding: 1rem;
   border-radius: 5px;
   background-color: white;
@@ -214,13 +220,14 @@ h4 {
 .sidebar {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1rem;
 }
 
-.announcements-section > div {
+.announcements-section>div {
   padding: 1rem;
   border-radius: 5px;
   background-color: white;
+  box-shadow: 1px 1px 5px darkgray;
 }
 
 .announcements-section h5,
@@ -229,15 +236,28 @@ h4 {
 }
 
 .announcement {
-  padding: 0.5rem 0.5rem ;
+  padding: 0.5rem 0.5rem;
 }
 
-.announcements > :nth-child(1),
-.announcements > :nth-child(2) {
-    border-bottom: 1px solid darkgray;
+.announcements> :nth-child(1),
+.announcements> :nth-child(2) {
+  border-bottom: 1px solid darkgray;
+}
+
+.users {
+  gap: 1rem;
+  display: grid;
+  padding: 1rem;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 1px 1px 5px darkgray;
 }
 
 .user {
   gap: 1rem;
   display: flex;
+}
+
+.at-name {
+  color: black;
 }
