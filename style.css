@@ -113,7 +113,7 @@ img {
 main {
   gap: 1rem;
   display: grid;
-  padding: 1.5rem 1rem;
+  padding: 1.5rem 1.5rem 1.5rem 1rem;
   font-size: 12px;
   grid-area: 2 / 2 / 3 / 3;
   background-color: #e2e8f0;
@@ -157,7 +157,8 @@ h4 {
   justify-content: end;
 }
 
-.notfication img {
+.notfication img,
+.users img {
   width: 2.2rem;
 }
 
@@ -210,18 +211,33 @@ h4 {
   margin-right: 0.3rem;
 }
 
-.announcements > div {
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.announcements-section > div {
   padding: 1rem;
   border-radius: 5px;
   background-color: white;
 }
 
-.announcements h5,
-.announcements p {
+.announcements-section h5,
+.announcements-section p {
   font-size: 11px;
 }
 
 .announcement {
-  padding: 0.5rem 0rem;
-  border-bottom: 1px solid darkgray;
+  padding: 0.5rem 0.5rem ;
+}
+
+.announcements > :nth-child(1),
+.announcements > :nth-child(2) {
+    border-bottom: 1px solid darkgray;
+}
+
+.user {
+  gap: 1rem;
+  display: flex;
 }
