@@ -120,6 +120,10 @@ main {
   grid-template-columns: 3fr 1.1fr;
 }
 
+main p {
+  color: dimgray;
+}
+
 h3 {
   font-size: 1rem;
   margin-bottom: 0.5rem;
@@ -190,19 +194,34 @@ h4 {
 }
 
 .cards section {
-  margin-top: 0.7rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .card {
-
+  display: grid;
 }
 
 .actions {
   gap: 1rem;
   display: flex;
+  align-self: end;
+  justify-self: end;
+  margin-right: 0.3rem;
+}
+
+.announcements > div {
+  padding: 1rem;
+  border-radius: 5px;
+  background-color: white;
 }
 
 .announcements h5,
 .announcements p {
-  font-size: 10px;
+  font-size: 11px;
+}
+
+.announcement {
+  padding: 0.5rem 0rem;
+  border-bottom: 1px solid darkgray;
 }
