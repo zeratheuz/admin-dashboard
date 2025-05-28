@@ -2,7 +2,6 @@
 *::before,
 *::after {
   margin: 0;
-  line-height: 1.5;
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -22,17 +21,6 @@ button,
 textarea,
 select {
   font: inherit;
-}
-
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  text-wrap: balance;
-  overflow-wrap: break-word;
 }
 
 body {
@@ -185,11 +173,16 @@ h3 {
 .cards {
   gap: 1rem;
   display: grid;
-  grid-template: repeat(auto-fit, minmax(150px, 1fr)) / repeat(auto-fit, minmax(200px, 1fr)) ;
+  grid-auto-rows: minmax(10rem, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)) ;
 }
 
 .cards div {
+  padding: 1rem;
   background-color: white;
+  border-left: 0.4rem solid red;
+  border-radius: 0.5rem;
+  box-shadow: 1px 1px 5px darkgray;
 }
 
 .announcements h5,
