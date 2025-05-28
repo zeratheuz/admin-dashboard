@@ -4,7 +4,7 @@
   margin: 0;
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: Roboto;
 }
 
 img,
@@ -79,11 +79,11 @@ nav li a {
 
 header {
   z-index: 1;
-  gap: 1.3rem;
+  gap: 1.1rem;
   display: grid;
   grid-area: 1 / 2 / 2 / 3;
   background-color: white;
-  padding: 1rem 2rem 0.5rem;
+  padding: 1rem 2.1rem 0.7rem;
   grid-template: 2rem 1fr / 2fr 1fr;
   box-shadow: 2px 1px 5px darkgray;
 }
@@ -113,7 +113,7 @@ button {
 main {
   gap: 1rem;
   display: grid;
-  padding: 1rem;
+  padding: 1.5rem 1rem;
   font-size: 12px;
   grid-area: 2 / 2 / 3 / 3;
   background-color: #e2e8f0;
@@ -123,6 +123,10 @@ main {
 h3 {
   font-size: 1rem;
   margin-bottom: 0.5rem;
+}
+
+h4 {
+  font-size: 13px;
 }
 
 .search {
@@ -160,7 +164,7 @@ h3 {
 }
 
 .welcome img {
-  width: 3.5rem;
+  width: 3.3rem;
 }
 
 .post {
@@ -179,10 +183,14 @@ h3 {
 
 .cards div {
   padding: 1rem;
+  border-radius: 5px;
   background-color: white;
   border-left: 0.4rem solid red;
-  border-radius: 0.5rem;
   box-shadow: 1px 1px 5px darkgray;
+}
+
+.cards section {
+  margin-top: 1rem;
 }
 
 .announcements h5,
