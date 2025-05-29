@@ -49,6 +49,7 @@ h1 svg {
 
 svg {
   width: 1.3rem;
+  min-width: 1.3rem;
 }
 
 ul {
@@ -189,7 +190,7 @@ h4 {
   gap: 1rem;
   display: grid;
   grid-auto-rows: minmax(10rem, 1fr);
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 }
 
 .cards>div {
