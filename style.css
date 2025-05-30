@@ -38,9 +38,9 @@ nav {
 
 h1 {
   gap: 5px;
-  padding: 0.8rem 0.6rem;
   display: flex;
   align-items: center;
+  padding: 0.8rem 0.6rem;
 }
 
 h1 svg {
@@ -108,7 +108,7 @@ small {
 }
 
 h2 {
-  font-size: 20px;
+  font-size: 24px;
 }
 
 img {
@@ -186,19 +186,16 @@ h4 {
   grid-template-columns: repeat(3, minmax(5rem, 10rem));
 }
 
-.cards {
-  gap: 1rem;
-  display: grid;
-  grid-auto-rows: minmax(10rem, 1fr);
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+.projects {
+  display: flex;
+  flex-direction: column;
 }
 
-.cards>div {
-  padding: 1rem;
-  border-radius: 5px;
-  background-color: white;
-  border-left: 0.4rem solid red;
-  box-shadow: 1px 1px 5px darkgray;
+.cards {
+  flex: 1;
+  gap: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .cards section {
@@ -208,6 +205,11 @@ h4 {
 
 .card {
   display: grid;
+  padding: 1rem;
+  border-radius: 5px;
+  background-color: white;
+  border-left: 0.4rem solid red;
+  box-shadow: 1px 1px 5px darkgray;
 }
 
 .actions {
@@ -219,21 +221,30 @@ h4 {
 }
 
 .sidebar {
-  display: flex;
-  flex-direction: column;
   gap: 1rem;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
 }
 
-.announcements-section>div {
-  padding: 1rem;
-  border-radius: 5px;
-  background-color: white;
-  box-shadow: 1px 1px 5px darkgray;
+.announcements-section,
+.trending {
+  display: flex;
+  flex-direction: column;
 }
 
 .announcements-section h5,
 .announcements-section p {
   font-size: 11px;
+}
+
+.announcements {
+  flex: 1;
+  display: grid;
+  padding: 1rem;
+  border-radius: 5px;
+  background-color: white;
+  grid-template-rows: 1fr 1fr 1fr;
+  box-shadow: 1px 1px 5px darkgray;
 }
 
 .announcement {
@@ -246,7 +257,7 @@ h4 {
 }
 
 .users {
-  gap: 1rem;
+  flex: 1;
   display: grid;
   padding: 1rem;
   border-radius: 5px;
