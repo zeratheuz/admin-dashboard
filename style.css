@@ -8,25 +8,25 @@
 }
 
 img,
-picture,
+svg,
 video,
 canvas,
-svg {
+picture {
   display: block;
   max-width: 100%;
 }
 
 input,
 button,
-textarea,
-select {
+select,
+textarea {
   font: inherit;
 }
 
 body {
   height: 100vh;
   display: grid;
-  grid-template: 1fr 5fr / clamp(220px, 15%, 300px) 1fr;
+  grid-template: 1fr 5fr / max(20%, 250px) 7.5fr;
 }
 
 nav {
@@ -39,12 +39,14 @@ nav {
 h1 {
   gap: 5px;
   display: flex;
+  font-size: 2rem;
   align-items: center;
   padding: 0.8rem 0.6rem;
 }
 
 h1 svg {
   width: 20%;
+  min-width: 20%;
 }
 
 svg {
@@ -53,8 +55,8 @@ svg {
 }
 
 ul {
-  list-style-type: none;
   padding: 0;
+  list-style-type: none;
 }
 
 nav div {
@@ -118,11 +120,11 @@ img {
 main {
   gap: 1rem;
   display: grid;
-  padding: 1.5rem 1.5rem 1.5rem 1rem;
-  font-size: 12px;
+  font-size: 1rem;
   grid-area: 2 / 2 / 3 / 3;
   background-color: #e2e8f0;
   grid-template-columns: 3fr 1.1fr;
+  padding: 1.5rem 1.5rem 1.5rem 1rem;
 }
 
 main p {
@@ -130,12 +132,12 @@ main p {
 }
 
 h3 {
-  font-size: 1rem;
+  font-size: 20px;
   margin-bottom: 0.5rem;
 }
 
 h4 {
-  font-size: 14px;
+  font-size: 18px;
 }
 
 .search {
