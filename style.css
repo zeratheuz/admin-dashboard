@@ -20,27 +20,6 @@ nav {
   background-color: mediumseagreen;
 }
 
-h1 {
-  gap: 5px;
-  display: flex;
-  font-size: 2rem;
-  align-items: center;
-}
-
-h1 svg {
-  min-width: 2rem;
-}
-
-svg {
-  width: 1.5rem;
-  min-width: 1.5rem;
-}
-
-ul {
-  padding: 0;
-  list-style-type: none;
-}
-
 nav div {
   gap: 2.5rem;
   display: flex;
@@ -61,6 +40,27 @@ nav li a {
   align-items: center;
   margin-bottom: 1.3rem;
   text-decoration: none;
+}
+
+h1 {
+  gap: 5px;
+  display: flex;
+  font-size: 2rem;
+  align-items: center;
+}
+
+h1 svg {
+  min-width: 2rem;
+}
+
+svg {
+  width: 1.5rem;
+  min-width: 1.5rem;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
 }
 
 header {
@@ -152,6 +152,13 @@ h4 {
 .users img {
   width: 2.5rem;
   height: 2.5rem;
+}
+
+.notfication a {
+  padding: 0;
+  color: black;
+  text-decoration: none;
+  background-color: white;
 }
 
 .welcome {
